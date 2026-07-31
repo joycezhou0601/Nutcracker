@@ -6,7 +6,7 @@
   --background: #f8f1f7;
   --card: #fffafb;
   --text: #7c5353;
-  --radius: 16px;
+  --radius: 10px;
 }
 
 html,
@@ -45,7 +45,7 @@ body {
 
 .page {
   background: white;
-  border-radius: 22px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.09);
 }
@@ -61,7 +61,7 @@ body {
 }
 
 .page-cover {
-  border-radius: 26px;
+  border-radius: 10px;
 }
 
 .book-controls {
@@ -108,14 +108,14 @@ body {
   .book-stage {
     min-height: 70vh;
     padding: 18px 8px;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
   .page {
-    border-radius: 14px;
+    border-radius: 10px;
   }
 
   .page-cover {
-    border-radius: 18px;
+    border-radius: 10px;
   }
 }
