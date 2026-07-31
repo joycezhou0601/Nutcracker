@@ -77,3 +77,24 @@ body {
 .hint {
   display: none;
 }
+/* Force transparent background */
+html,
+body,
+.viewer-shell,
+.book-stage {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.viewer-shell,
+.book-stage {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Keep only the book pages visible */
+.page,
+.page-cover,
+.page img {
+  border-radius: 12px !important;
+}
