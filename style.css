@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #f8f1f7;
+  --card: #fffafb;
+  --text: #7c5353;
+  --radius: 28px;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.viewer-shell {
+  width: min(1180px, 100%);
+  padding: 28px;
+}
+
+.book-stage {
+  min-height: min(78vh, 760px);
+  display: grid;
+  place-items: center;
+  padding: clamp(20px, 5vw, 64px);
+  overflow: visible;
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: 0 18px 55px rgba(76, 50, 65, 0.14);
+}
+
+#book {
+  margin: 0 auto;
+}
+
+.page {
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.09);
+}
+
+.page img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: inherit;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.page-cover {
+  border-radius: 26px;
+}
+
+.book-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.book-controls button {
+  appearance: none;
+  border: 1px solid rgba(124, 83, 83, 0.25);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--text);
+  padding: 10px 16px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.book-controls button:hover {
+  background: white;
+}
+
+#page-status {
+  min-width: 92px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.hint {
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+@media (max-width: 700px) {
+  .viewer-shell {
+    padding: 12px;
+  }
+
+  .book-stage {
+    min-height: 70vh;
+    padding: 18px 8px;
+    border-radius: 20px;
+  }
+
+  .page {
+    border-radius: 14px;
+  }
+
+  .page-cover {
+    border-radius: 18px;
+  }
+}
