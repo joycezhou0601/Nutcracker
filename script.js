@@ -2,8 +2,8 @@ window.addEventListener("load", () => {
   const bookElement = document.getElementById("book");
 
   const pageFlip = new St.PageFlip(bookElement, {
-    width: 400,
-    height: 540,
+    width: 440,
+    height: 550,
     size: "stretch",
     minWidth: 270,
     maxWidth: 520,
