@@ -1,4 +1,4 @@
-# Elf Sisters flip-book template
+# Nutcracker template
 
 这个模板使用 StPageFlip，实现：
 
