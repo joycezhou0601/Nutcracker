@@ -24,7 +24,7 @@ body {
 }
 
 .viewer-shell {
-  width: min(1180px, 100%);
+  width: min(900px, 100%);
   padding: 16px;
 }
 
