@@ -25,7 +25,7 @@ body {
 
 .viewer-shell {
   width: min(1180px, 100%);
-  padding: 28px;
+  padding: 16px;
 }
 
 .book-stage {
